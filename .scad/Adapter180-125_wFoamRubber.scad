@@ -1,4 +1,4 @@
-$fn=360;
+$fn=100;
 h = 30; // height of each module (3 total)
 d1 = 62.5; // Smaller outer diameter
 d2 = 90; // Bigger outer Diameter
@@ -17,12 +17,12 @@ difference(){
         }
         //foam rubber mounting
         difference(){
-            translate([0,0,h-10]){cylinder(FoamRubber,d2,d2);}
-            translate([0,0,h-10]){cylinder(FoamRubber,d2-0.5,d2-0.5);}
+            translate([0,0,h-25]){cylinder(FoamRubber,d2,d2);}
+            translate([0,0,h-25]){cylinder(FoamRubber,d2-0.5,d2-0.5);}
         }
     }
     // aerodynamic part
-    cylinder(h,d2-0.5,d2-d);
+    cylinder(5,d2-0.5,d2-d);
 }
 
 
